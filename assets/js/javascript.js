@@ -14,7 +14,7 @@ cards.addEventListener('click', e => {
 
 const fetchData = async () => {
     try {
-        const res = await fetch('https://www.omdbapi.com/?s=batman&apikey=ef7d3bc8')
+        const res = await fetch('http://www.omdbapi.com/?s=batman&apikey=ef7d3bc8')
         const data = await res.json()
         listaProductos(data)
     } catch (error) {
