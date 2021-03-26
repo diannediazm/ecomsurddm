@@ -1,20 +1,43 @@
+body {
+  background-image: url('../images/14763.jpg');
+  height: 1000px;
+}
+
+.navbar {
+  background-color: navy;
+  height: 60px;
+}
+
+.title {
+  padding-bottom: 20px;
+}
+
 .tarjeta {
   margin: 20px 0px 20px 0px;
 }
 
+.btn-delete {
+  background-color: #da223a;
+  border-style: none;
+  border-radius: 50px;
+  padding: 10px;
+  color: white;
+  margin: 10px 0px 10px 0px;
+}
 
+.boton {
+  background-color: #f5d000;
+  border-style: none;
+  border-radius: 50px;
+  padding: 10px;
+  color: white;
+  margin: 10px 0px 10px 0px;
+}
 
-  /* Responsive columns - one column layout (vertical) on small screens */
-  @media screen and (max-width: 600px) {
-    .column {
-      width: 100%;
-      display: block;
-      margin-bottom: 20px;
-    }
-  }
+.footer {
+  background-color: navy;
+  height: 60px;
+}
 
-  .poster {
-    width: 15%;
-  }
 
  

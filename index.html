@@ -12,23 +12,31 @@
 </head>
 
 <body>
+  <nav class="navbar"></nav>
     <div class="container my-5 text-center">
+      
       <h1 class="title">¡Compra tu ticket!</h1> 
-      <button id="eliminar">Vaciar Carrito</button>      
-        <div class="row" id="productos">
-            <div class="columna">
-              <div class="tarjeta" id="cards">
-                <h4></h4> 
-                <img src="" alt="" class="poster">  
-                <h5>Título: </h5>
-                <p>Año: </p>
-                <button class="boton" id="comprar">Agregar al carrito</button>
+        <div id="carritoLista">
+          <h3>Carrito</h3>
+          <h4></h4> 
+            <button id="eliminar" class="btn-delete">Vaciar Carrito</button>   
+            <hr>   
+        </div>
+          <div class="row" id="productos">
+              <div class="columna">
+                <div class="tarjeta" id="cards">
+                  <img src="" alt="" class="poster">  
+                  <h5>Título: </h5>
+                  <p>Año: </p>
+                  <button class="boton" id="comprar">Agregar al carrito</button>
+                </div>
               </div>
-            </div>
-        </div>    
+          </div>    
     </div>
+
+    <footer class="footer"></footer>
     
 
-    <script type="text/javascript" src="assets/js/javascript.js"></script>
+  <script type="text/javascript" src="assets/js/javascript.js"></script>
 </body>
 </html>

@@ -1,5 +1,6 @@
 const productos = document.getElementById('productos').content
 const cards = document.getElementById('cards')
+const carritoLista = document.getElementById('carritoLista')
 const fragment = document.createDocumentFragment()
 let carrito = {}
 
@@ -54,30 +55,14 @@ const setCarrito = item => {
 
 const comprar = () => {
     Object.values(carrito).forEach(entrada => {
-        cards.querySelector('h4').textContent = `Compraste ${entrada.cantidad} ticket`   
-        const clone = cards.cloneNode(true)
-        fragment.appendChild(clone)
-   
+        carritoLista.querySelector('h4').textContent = `Compraste ${entrada.cantidad} ticket`   
     })
-   cards.appendChild(fragment)
 }
 
 $('#eliminar').click(function() {
     $('h4').empty();
 });
 
-/*const eliminarCarrito = e => {
-    if (e.target.classList.contains('eliminar')) {
-        const entrada = carrito[e.target.dataset.cantidad]
-        entrada.cantidad--
-        if (entrada.cantidad === 0) {
-            delete carrito[e.target.dataset.cantidad]
-        } else {
-            carrito[e.target.dataset.cantidad] = {...entrada}
-        }
-        comprar()
-    }
-    e.stopPropagation()
-}*/
+
 
 
