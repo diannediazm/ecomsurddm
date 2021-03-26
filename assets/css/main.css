@@ -1,0 +1,20 @@
+.tarjeta {
+  margin: 20px 0px 20px 0px;
+}
+
+
+
+  /* Responsive columns - one column layout (vertical) on small screens */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+
+  .poster {
+    width: 15%;
+  }
+
+ 
