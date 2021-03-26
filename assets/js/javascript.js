@@ -53,7 +53,6 @@ const setCarrito = item => {
 }
 
 const comprar = () => {
-
     Object.values(carrito).forEach(entrada => {
         cards.querySelector('h4').textContent = `Compraste ${entrada.cantidad} ticket`   
         const clone = cards.cloneNode(true)
@@ -61,8 +60,11 @@ const comprar = () => {
    
     })
    cards.appendChild(fragment)
-    
 }
+
+$('#eliminar').click(function() {
+    $('h4').empty();
+});
 
 /*const eliminarCarrito = e => {
     if (e.target.classList.contains('eliminar')) {
@@ -78,7 +80,4 @@ const comprar = () => {
     e.stopPropagation()
 }*/
 
-function eliminar () {
-    var borrar = document.querySelector
-}
 
